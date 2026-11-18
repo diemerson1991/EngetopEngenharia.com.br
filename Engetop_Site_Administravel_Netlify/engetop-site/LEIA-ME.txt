@@ -1,0 +1,23 @@
+ENGETOP — SITE INSTITUCIONAL EDITÁVEL
+
+O QUE ESTÁ INCLUÍDO
+- Site responsivo com visual inspirado no site demonstrativo da WORK.
+- Portfólio de serviços e fotografias extraídas do PDF institucional da Engetop.
+- Busca, filtros por categoria e páginas de detalhes dos serviços.
+- Botões de WhatsApp que abrem conversa diretamente. Principal: +55 (94) 99188-8143. Alternativo exibido: +55 (94) 99244-8612.
+- Área restrita no cabeçalho. Senha inicial: 199100.
+- Painel para editar dados, serviços, textos, escopos, imagens, adicionar e excluir serviços.
+- Função Netlify e Netlify Blobs para armazenar as alterações globalmente.
+
+PUBLICAÇÃO RECOMENDADA
+1. Descompacte o ZIP.
+2. Publique a pasta em um repositório GitHub (ou conecte a pasta pelo Netlify CLI). Para usar a função de salvamento, faça deploy do projeto completo com build e functions; não use apenas Netlify Drop para subir um HTML isolado.
+3. No Netlify, importe o repositório e faça o primeiro deploy. A função está em netlify/functions/content.mjs e o pacote @netlify/blobs está declarado em package.json.
+4. Após o deploy, abra o site, clique em ÁREA RESTRITA e entre com a senha 199100. As alterações salvas no painel são gravadas no Netlify Blobs e ficam visíveis para todos os visitantes.
+
+IMPORTANTE
+- A senha é validada no servidor por hash; não fica escrita em texto puro no JavaScript do site.
+- O site funciona como prévia local se aberto diretamente no computador, mas nesse modo as alterações ficam apenas naquele navegador. O salvamento compartilhado depende do deploy das Netlify Functions e do Netlify Blobs.
+- A senha inicial é simples; depois do primeiro deploy, recomenda-se alterá-la no arquivo da função (hash e salt) ou solicitar uma versão com senha mais forte.
+- As imagens iniciais são fotografias/figuras extraídas do portfólio fornecido. Antes de divulgar, confirme que as imagens representam os serviços e que você possui autorização para publicá-las.
+- O botão de WhatsApp usa o primeiro número do portfólio como principal; o segundo permanece visível como contato alternativo.
